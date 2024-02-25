@@ -1,0 +1,20 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Is it Kuwaiti National day? </title>
+        <link href="{% static 'q8/styles.css' %}" rel="stylesheet">
+    </head>
+    <body>
+
+        {% if is_Kuwaiti_national_day %}
+            <h1>YES</h1>
+            <img src="{% static 'q8/kuwait.jpg' %}" alt="Kuwait">
+        {% else %}
+            <h1>NO</h1>
+            <img src="{% static 'q8/kuwait.jpg' %}" alt="Kuwait">
+
+        {% endif %}
+    </body>
+</html>
